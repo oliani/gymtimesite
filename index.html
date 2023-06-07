@@ -5,28 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
     <title>Hello World!</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gym: '#ff6b00',
+          }
+        }
+      }
+    }
+      </script>
   </head>
   <body class="min-h-screen">
     <nav class="bg-black w-screen h-72 items-center text-white">
-      <div class="container mx-auto h-full px-8 flex flex-row items-center justify-between">
+      <div
+        class="container mx-auto h-full px-8 flex flex-row items-center justify-between"
+      >
         <a href="/">
           <img
-            class="h-11/12 inline-block"
-            src="https://cdn.glitch.global/8af6f655-5b62-4f07-8a9e-7e28f76b201d/logo.jpeg?v=1686095934638"
+            class="h-72"
+            src="https://cdn.glitch.global/8af6f655-5b62-4f07-8a9e-7e28f76b201d/logo_render?v=1686096582190"
             alt=""
             title=""
           />
         </a>
-
-        <div>
-          <a href="">Início</a>
-          <a href="">Contato</a>
-          <a href="">Galeria</a>
-          <a href="">Planos</a>
+        <div class="h-full flex flex-col justify-between gap-4">
+          <div>
+            <a href="">
+              <img
+                width="100"
+                height="100"
+                src="https://img.icons8.com/ios-filled/100/000000/facebook-f.png"
+                alt="facebook-f"
+            /></a>
+            <a href="">
+              <img
+                width="100"
+                height="100"
+                src="https://img.icons8.com/ios-filled/100/000000/twitter.png"
+                alt="twitter"
+            /></a>
+          </div>
+          <div class="flex flex-row gap-8 text-gym">
+            <a href="" class="border-b border-gym px-4">Início</a>
+            <a href="" class="border-b border-gym px-4">Contato</a>
+            <a href="" class="border-b border-gym px-4">Galeria</a>
+            <a href="" class="border-b border-gym px-4">Planos</a>
+          </div>
+          
         </div>
       </div>
     </nav>
+    <img src="https://cdn.glitch.global/8af6f655-5b62-4f07-8a9e-7e28f76b201d/banner.png?v=1686096716052"/>
   </body>
 </html>
