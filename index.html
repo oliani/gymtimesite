@@ -32,15 +32,15 @@
     </script>
   </head>
   <body class="min-h-screen bg-white overflow-x-hidden font-roboto">
-    <nav class="bg-black w-screen h-[20vh] items-center text-white py-4">
+    <nav class="bg-black w-screen h-fit md:max-h-44 items-center text-white py-4">
       <div
-        class="container mx-auto h-full px-8 gap-16 flex flex-row items-center justify-center"
+        class="container mx-auto h-full px-8 gap-4 md:gap-16 flex flex-col md:flex-row items-center justify-center"
       >
         <a href="/">
           <img
-            class="h-72"
-            src="https://cdn.glitch.global/8af6f655-5b62-4f07-8a9e-7e28f76b201d/logo_render?v=1686096582190"
-            alt=""
+            class="h-24 md:h-44"
+            src="https://cdn.glitch.global/8af6f655-5b62-4f07-8a9e-7e28f76b201d/cutted%20logo.png?v=1687305738022"
+            alt="Gym Time"
             title=""
           />
         </a>
@@ -50,22 +50,22 @@
           <div class="h-16 flex flex-row gap-8">
             <a href="">
               <img
-                width="50"
-                height="50"
+                width="40"
+                height="40"
                 src="https://img.icons8.com/ios-filled/100/000000/facebook-f.png"
                 alt="facebook-f"
                 class="invert"
             /></a>
             <a href="">
               <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/ios-filled/100/000000/twitter.png"
+                width="40"
+                height="40"
+                src="https://img.icons8.com/ios-filled/100/000000/instagram.png"
                 alt="twitter"
                 class="invert"
             /></a>
           </div>
-          <div class="flex flex-row gap-8 text-gym font-bold">
+          <div class="flex flex-row text-sm md:text-md gap-4 md:gap-8 text-gym font-bold">
             <a href="" class="border-b border-gym px-4">Início</a>
             <a href="" class="border-b border-gym px-4">Contato</a>
             <a href="" class="border-b border-gym px-4">Galeria</a>
@@ -75,7 +75,7 @@
       </div>
     </nav>
     <header
-      class="w-screen h-[80vh] bg-[url('https://cdn.glitch.global/8af6f655-5b62-4f07-8a9e-7e28f76b201d/banner2.png?v=1686096716052')] bg-cover bg-center border-b-8 border-black"
+      class="w-screen h-[800px] bg-[url('https://cdn.glitch.global/8af6f655-5b62-4f07-8a9e-7e28f76b201d/banner2.png?v=1686096716052')] bg-cover bg-center border-b-8 border-black"
     ></header>
     <div
       class="flex flex-col justify-between bg-gradient-to-b from-[#F97D03] to-[#FD3C01] pt-8"
@@ -147,11 +147,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="mt-8 w-full flex justify-center">
-        <button class="bg-gray-900 px-8 py-4 text-white rounded-md border border-1 border-slate-800 font-bold">
-          CONHEÇA NOSSOS PLANOS
-        </button>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -280,6 +275,14 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="mt-16 w-full flex justify-center">
+          <a
+            href="#"
+            class="bg-gray-900 px-8 py-4 text-white text-2xl rounded-md border border-1 border-slate-800 font-bold hover:bg-black"
+          >
+            CONHEÇA NOSSOS PLANOS
+          </a>
         </div>
       </div>
       <svg
